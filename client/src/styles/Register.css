@@ -1,0 +1,57 @@
+.form-group{
+    position: absolute;
+    top: 12rem;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-content: space-evenly;
+    border: 0px;
+    /* border-bottom: 1px solid #262626; */
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    left: 30%;   
+}
+
+input{    
+    border: none;
+    border-bottom: 1px solid #262626;
+    /* display: flex;
+    justify-content: space-between; */
+    flex-basis: 48%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: grid;
+    outline: 0;
+}
+
+#signup{
+    background-color: #170e20;
+    color: white;
+    width: 10%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    position: absolute;
+    left: 60%;
+    bottom: -169px;
+    /* margin-bottom: 50px; */
+}
+
+/* #choose{
+    background-color: #170e20;
+    color: white;
+    width: 30%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid;
+} */
+
+
+
+

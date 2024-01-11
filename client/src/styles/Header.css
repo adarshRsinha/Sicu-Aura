@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.myimage1{
+    width: 30%;
+    /* height: 40.15rem; */
+    height: 126vh;
+}
+
+.myimage2{
+    position:absolute;
+    top: 65px;
+    right: 45rem;
+    height: 75px;
+}
+
+/* h1{
+    position:absolute;
+    top: 80px;
+    right: 23rem;
+    color: black;
+} */
+
+.or{
+    position:absolute;
+    top: 80px;
+    right: 25.5rem;
+    color: rgb(168, 167, 167);
+    font-size: 2rem;
+}
+
+.signup{
+    position:absolute;
+    top: 80px;
+    right: 27rem;
+    color: rgb(168, 167, 167);
+    font-size: 2rem;
+}
+
+.login{
+    position:absolute;
+    top: 80px;
+    right: 20rem;
+    color: rgb(168, 167, 167);
+    font-size: 2rem;
+}
+
+/* .login:visited{
+    font-weight: bold;
+} */
