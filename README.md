@@ -17,21 +17,32 @@ A Web page is a record system all India, including streamlined data management, 
 Screenshots
 
 Sign-up: 
+
+
 ![image](https://github.com/adarshRsinha/sicu-aura/assets/93790691/6f59a866-e929-4f03-9b19-f3fbf207474a)
 
 
 Login: 
+
+
 ![image](https://github.com/adarshRsinha/sicu-aura/assets/93790691/13d304c1-ea80-4c72-ae17-fa7181543111)
 
 
 Hospital-Registration: 
+
+
 ![image](https://github.com/adarshRsinha/sicu-aura/assets/93790691/e9f2230c-cd80-4823-9231-38fe146f2449)
 
 
 About:-
+
+
 Sicu-Aura is a record system all over India which helps improved patient care through informed decision-making, potential cost reduction by avoiding duplication of tests, enhanced public health monitoring. Also patient empowerment through access to health records, and the promotion of interoperability for seamless information exchange between healthcare providers.
 
+
+
 Tech Stack:- 
+
 Express.js 
 Node.js 
 React.js 
