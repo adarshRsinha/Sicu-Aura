@@ -5,14 +5,17 @@ Installation
 3. Run npm run install-client to install the front-end dependencies. 
 4. Rename .env.example to .env and populate the keys with the relevant information.
 
+
 Usage
 
 To run the backend server locally, run: npm start 
 To run the front-end app locally, navigate to /client and run npm start
 
+
 What is a Sicu-Aura?
 
 A Web page is a record system all India, including streamlined data management, improved patient care through informed decision-making, enhanced public health monitoring, increased research opportunities, improved emergency response, patient empowerment through access to health records.
+
 
 Screenshots
 
@@ -20,19 +23,22 @@ Screenshots
 Sign-up: 
 
 
-![image](https://github.com/adarshRsinha/sicu-aura/assets/93790691/6f59a866-e929-4f03-9b19-f3fbf207474a)
+![signup](https://github.com/adarshRsinha/Sicu-Aura/assets/93790691/9ff0ece7-85fb-4ea5-9bb7-7b4039569f76)
+
 
 
 Login: 
 
 
-![image](https://github.com/adarshRsinha/sicu-aura/assets/93790691/13d304c1-ea80-4c72-ae17-fa7181543111)
+![login](https://github.com/adarshRsinha/Sicu-Aura/assets/93790691/24e992f3-f7d3-463d-88ff-2adce28856a5)
+
 
 
 Hospital-Registration: 
 
 
-![image](https://github.com/adarshRsinha/sicu-aura/assets/93790691/e9f2230c-cd80-4823-9231-38fe146f2449)
+![registration-record](https://github.com/adarshRsinha/Sicu-Aura/assets/93790691/b64cd270-5ef4-46dc-896a-e583b7cf9b28)
+
 
 
 About:-
