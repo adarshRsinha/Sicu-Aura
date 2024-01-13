@@ -28,19 +28,23 @@ Screenshots
 Sign-up: 
 
 
-![image](https://github.com/adarshRsinha/Sicu-Aura/assets/93790691/6f59a866-e929-4f03-9b19-f3fbf207474a)
+![signup](https://github.com/adarshRsinha/Sicu-Aura/assets/93790691/54499d82-475c-4dee-8ff1-14f78e0bdb14)
+
 
 
 Login: 
 
 
-![image](https://github.com/adarshRsinha/Sicu-Aura/assets/93790691/13d304c1-ea80-4c72-ae17-fa7181543111)
+![login](https://github.com/adarshRsinha/Sicu-Aura/assets/93790691/3af456e2-b058-49c0-88d3-8cba49948343)
+
 
 
 Hospital-Registration: 
 
 
-![image](https://github.com/adarshRsinha/Sicu-aura/Assets/93790691/e9f2230c-cd80-4823-9231-38fe146f2449)
+
+![registration-record](https://github.com/adarshRsinha/Sicu-Aura/assets/93790691/661e8fd2-bfd4-4ebe-8379-918ac63331e4)
+
 
 
 About:-
