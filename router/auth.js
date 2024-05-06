@@ -67,34 +67,6 @@ router.post('/register', (req, res) => {
     
 });
 
-//login route
-// router.post('./signin', (req,res) => {
-//     const { Email_ID, Create_password } = req.body;
-
-//   // Check if Email_ID and Create_password are provided
-//   if (!Email_ID || !Create_password) {
-//     return res.json({ error: "Email and password are required" });
-//   }
-
-//   // Check the credentials against the database
-//   User.findOne({ Email_ID: Email_ID }, (err, user) => {
-//     // if (err) {
-//     //   return res.json({ error: "Server error" });
-//     // }
-
-//     // if (!user) {
-//     //   return res.json({ error: "User not found" });
-//     // }
-
-//     // Check if the provided password matches the stored password
-//     if (user.Create_password !== Create_password) {
-//       return res.json({ error: "Incorrect password" });
-//     }
-
-//     // res.json({message: "User Signin successfull"})
-    
-// });
-
 router.post('/signin', async (req,res) => {
     try {
         let token;
@@ -126,6 +98,41 @@ router.post('/signin', async (req,res) => {
         console.log(err);
     }
 });
+
+// Route to store image
+// router.post('/capture', async (req, res) => {
+//   const { imageData } = req.body;
+
+//   // Create a new image document and save it to the database
+//   try {
+    // const newImage = new Image({ imageData });
+//     await newImage.save();
+//     res.status(201).json({ message: 'Image saved successfully' });
+//   } catch (error) {
+//     console.error('Error saving image:', error);
+//     res.status(500).json({ error: 'Error saving image' });
+//   }
+// });
+
+// router.get('/capture/:id', async (req, res) => {
+//   const imageId = req.params.id;
+
+//   try {
+//     // Retrieve the image from the database
+//     const image = await Image.findById(imageId);
+
+//     if (!image) {
+//       return res.status(404).json({ error: 'Image not found' });
+//     }
+
+//     // Send the image data as a response
+//     res.set('Content-Type', 'image/jpeg');
+//     res.send(image.imageData);
+//   } catch (error) {
+//     console.error('Error fetching image:', error);
+//     res.status(500).json({ error: 'Error fetching image' });
+//   }
+// });
 
 router.get('/hospital-registration', async (req,res) => {
   try{

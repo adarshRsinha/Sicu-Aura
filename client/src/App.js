@@ -5,6 +5,7 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Camera from "./components/Camera";
 import About from "./components/About";
+// import Image from "./components/Image";
 import "./styles/App.css";
 import "./styles/Header.css";
 import "./styles/Register.css";
@@ -20,6 +21,7 @@ function App(){
                 <Route path="/signin" element={<Login/>} />
                 <Route path="/capture" element={<Camera/>} />
                 <Route path="/hospital-registration" element={<About/>} />
+                {/* <Route path="/capture/:id" element={<Image/>} /> */}
             </Routes>
         </Router>
     );

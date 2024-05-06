@@ -11,19 +11,6 @@ function Camera() {
   const [photoData, setPhotoData] = useState(null);
   const [mediaStream, setMediaStream] = useState(null);
   const [isCapturing, setIsCapturing] = useState(false);
-  // const location = useLocation();
-  // const isCameraRoute = location.pathname.includes('/capture');
-
-  // const handleStartCamera = async () => {
-  //   try {
-  //     const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-  //     videoRef.current.srcObject = stream;
-  //     setMediaStream(stream);
-  //     setIsCapturing(false);
-  //   } catch (error) {
-  //     console.error('Error accessing camera:', error);
-  //   }
-  // };
 
   const handleStartCamera = async () => {
     if(setIsCapturing(false)){
@@ -63,6 +50,27 @@ function Camera() {
       setIsCapturing(true);
       setPhotoData(dataURL);      
       setCaptureButtonText(`Continue`);
+
+      // Send the captured image data to the backend
+  fetch('/capture', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ imageData: dataURL }),
+  })
+    .then(response => {
+      if (response.ok) {
+        setIsCapturing(true);
+        setPhotoData(dataURL);
+        setCaptureButtonText('Continue');
+      } else {
+        console.error('Failed to save image');
+      }
+    })
+    .catch(error => {
+      console.error('Error saving image:', error);
+    });
       
   };
 

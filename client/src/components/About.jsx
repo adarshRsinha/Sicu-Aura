@@ -3,33 +3,18 @@ import {useNavigate} from 'react-router-dom';
 // import axios from 'axios';
 import Navbar from './Navbar';
 import '../styles/About.css';
+import DisplayImage from './Image';
 
 const About = () => {
   
   const history = useNavigate();
   const [useData, setUserData] = useState({});
 
-  // const callAboutPage = async () => {
-  //   try{
-  //     const res = await fetch('/hospital-registration', {
-  //       method: "GET",
-  //       headers: {
-  //         Accept: "application/json",
-  //         "Content-Type": "application/json"
-  //       },
-  //       credentials: "include"
-  //     });
-
-  //     const data = await res.json();
-  //     console.log(data);
-  //     setUserData(data);
-
-  //   } catch(err){
-  //     console.log(err);
-  //     // history("/signin");
-  //   }
+  // function handleNameChange(e) {
+  //   setUserData(e.target.value);
   // }
 
+  const dataArray = useData.data;
   useEffect(() => {
 
   const callAboutPage = async () => {
@@ -49,13 +34,14 @@ const About = () => {
 
     } catch(err){
       console.log(err);
-      history("/signin");
+      history.push("/signin");
     }
   };
 
     callAboutPage();
     
-  }, []);
+  }, [history]);
+
 
   return (
     <div className='container'>
@@ -106,35 +92,24 @@ const About = () => {
               </thead>             
               <tbody>
 
-              {/* <tr >
-                  <td>1.</td>
-                  <td>ABC Hospital...</td>
-                  <td>alexrobinson001@gmail.com</td>
-                  <td>ABC Road, Park Colony...</td>
-                  <td>9876543210</td>
-                  <td>Kolkata</td>
-                  <td>West Bengal</td>
-                  <td>700001</td>
-                  <td>12/12/2023</td>
-                  <td>2133</td>
-                  <td>File</td>
-                  <td>101</td>
-                  <td>08</td>
-                </tr> */}
+              {Array.isArray(dataArray) && dataArray.map((hospital, index) => (
+              <tr key={hospital._id}>
+                <td>{index + 1}</td>
+                <td>{hospital.Hospital_Name}</td>
+                <td>{hospital.Email_ID}</td>
+                <td>{hospital.Address}</td>
+                <td>{hospital.Phone_Number}</td>
+                <td>{hospital.City}</td>
+                <td>{hospital.State}</td>
+                <td>{hospital.Pincode}</td>
+                <td>{hospital.Hospital_Registration_Date}</td>
+                <td>{hospital.Hospital_registration_number}</td>
+                <td><DisplayImage imageName={hospital.filename} />Photo</td>
+                <td>{hospital.Emergency_Ward_number}</td>
+                <td>{hospital.Number_of_Ambulance_available}</td>
+              </tr>
+      ))}
                 
-                <tr >
-                  <td>{useData.Hospital_Name}</td>
-                  <td>{useData.Email_ID}</td>
-                  <td>{useData.Address}</td>
-                  <td>{useData.Phone_Number}</td>
-                  <td>{useData.City}</td>
-                  <td>{useData.Hospital_registration_number}</td>
-                  <td>{useData.State}</td>
-                  <td>{useData.Emergency_Ward_number}</td>
-                  <td>{useData.Pincode}</td>
-                  <td>{useData.Hospital_Registration_Date}</td>
-                  <td>{useData.Number_of_Ambulance_available}</td>
-                  </tr>               
                 
               </tbody>  
               
