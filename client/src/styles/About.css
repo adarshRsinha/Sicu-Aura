@@ -149,44 +149,6 @@
     }
   }
 
-/*.div-14-table{
-  width: 150%;
-  table-layout: fixed;  
-} 
-
-.div-14-table thead {
-    border-radius: 20px;
-    background-color: #0df5e3;
-    display: flex;
-    margin-right: 50px;
-    width: 200rem;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 12px;
-  }
-  
-
-  tr{
-    display: contents;
-  }
-
-  tbody{
-    color: #201a31;
-    align-self: start;
-    padding: 15px;
-    font: 500 16px Poppins, sans-serif;
-  }
-
- 
-@media (max-width: 991px) {
-  .div-14-table {
-    margin-right: 10px;
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-} */ */
-
 .table-fixed{
   table-layout: fixed;
 }
@@ -202,7 +164,6 @@ thead th{
 
 th, td{
   padding: 10px;
-  /* outline: 1px solid black; */
   border: none;
   outline-offset: -1px;
   padding-left: 5px;

@@ -5,7 +5,6 @@
 
 .myimage1{
     width: 30%;
-    /* height: 40.15rem; */
     height: 126vh;
 }
 
@@ -15,13 +14,6 @@
     right: 45rem;
     height: 75px;
 }
-
-/* h1{
-    position:absolute;
-    top: 80px;
-    right: 23rem;
-    color: black;
-} */
 
 .or{
     position:absolute;
@@ -46,7 +38,3 @@
     color: rgb(168, 167, 167);
     font-size: 2rem;
 }
-
-/* .login:visited{
-    font-weight: bold;
-} */
